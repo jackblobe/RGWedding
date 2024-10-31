@@ -5,24 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Ralph and Grace</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: url('header-background.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            font-size: 3em;
+        }
+        section.intro {
+            padding: 20px;
+            text-align: center;
+            background: white;
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section.intro h2 {
+            color: #333;
+        }
+        section.intro p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .images img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 10px;
+            border: 2px solid #ddd;
+            transition: transform 0.3s;
+        }
+        .images img:hover {
+            transform: scale(1.05);
+        }
+        .rsvp-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .rsvp-link a {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .rsvp-link a:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Meet the Couple</h1>
+        <h1>Meet Ralph and Grace</h1>
     </header>
-    
+
     <section class="intro">
         <h2>About Ralph</h2>
         <p>Ralph is a passionate traveler, a gourmet cook, and a lover of all things outdoors. He enjoys hiking, photography, and spending time with friends and family.</p>
-        
+
         <h2>About Grace</h2>
         <p>Grace is an avid reader, a talented artist, and a dedicated professional. She loves exploring new cultures, volunteering, and spending quality time with her loved ones.</p>
     </section>
-    
+
+    <section class="images">
+        <img src="ralph.jpg" alt="Ralph">
+        <img src="grace.jpg" alt="Grace">
+        <img src="couple.jpg" alt="Ralph and Grace Together">
+    </section>
+
     <section class="rsvp-link">
         <h2>Join Us in Celebrating!</h2>
-        <p>We would love to have you celebrate our special day with us. Click the link below to RSVP!</p>
-        <a href="index.html">RSVP Here</a> <!-- Link to the RSVP page -->
+        <p>We would love to have you celebrate our special day with us.</p>
+        <a href="index.html">RSVP Here</a> <!-- Link to your RSVP page -->
     </section>
 
     <footer>
