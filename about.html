@@ -10,49 +10,53 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f4f4f4;
         }
         header {
             background: url('header-background.jpg') no-repeat center center/cover;
-            height: 300px;
+            height: 60vh; /* Adjust height for a prominent header */
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            position: relative;
         }
         header h1 {
             font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        section.intro {
-            padding: 20px;
-            text-align: center;
-            background: white;
+        section {
             max-width: 800px;
             margin: 20px auto;
+            padding: 20px;
+            background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        section.intro h2 {
+        section h2 {
             color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
         }
-        section.intro p {
+        section p {
             font-size: 1.2em;
             line-height: 1.6;
+            color: #555;
         }
         .images {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
             margin: 20px 0;
         }
         .images img {
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 250px;
             object-fit: cover;
             border-radius: 10px;
-            margin: 10px;
-            border: 2px solid #ddd;
+            margin: 0 10px;
+            border: 3px solid #ddd;
             transition: transform 0.3s;
         }
         .images img:hover {
@@ -60,15 +64,16 @@
         }
         .rsvp-link {
             text-align: center;
-            margin-top: 30px;
+            margin: 30px 0;
         }
         .rsvp-link a {
-            padding: 10px 20px;
+            padding: 15px 30px;
             background-color: #28a745;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s;
+            font-size: 1.2em;
         }
         .rsvp-link a:hover {
             background-color: #218838;
@@ -86,12 +91,17 @@
         <h1>Meet Ralph and Grace</h1>
     </header>
 
-    <section class="intro">
+    <section class="about">
+        <h2>Our Story</h2>
+        <p>Ralph and Grace met in a quaint coffee shop, where their love for adventure and creativity blossomed. Since that day, they have explored the world together, creating beautiful memories at every turn.</p>
+    </section>
+
+    <section class="about">
         <h2>About Ralph</h2>
-        <p>Ralph is a passionate traveler, a gourmet cook, and a lover of all things outdoors. He enjoys hiking, photography, and spending time with friends and family.</p>
+        <p>Ralph is a passionate traveler and gourmet cook who loves to explore the great outdoors. Whether hiking a new trail or capturing the perfect sunset photo, Ralph's zest for life is contagious.</p>
 
         <h2>About Grace</h2>
-        <p>Grace is an avid reader, a talented artist, and a dedicated professional. She loves exploring new cultures, volunteering, and spending quality time with her loved ones.</p>
+        <p>Grace is an artist with a heart for storytelling. From painting to writing, she finds joy in expressing herself creatively. Her adventurous spirit inspires those around her.</p>
     </section>
 
     <section class="images">
